@@ -11,5 +11,9 @@ import com.example.noteapp.feature_note.domain.model.Note
 abstract class NoteDatabase: RoomDatabase() { //Room이 구현체를 자동 생성, 우리는 틀만 정의
     abstract val noteDao: NoteDao //DAO연결
 
+    companion object {
+        const val DATABASE_NAME = "notes_db"
+    }
+
 
 }
